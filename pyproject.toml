@@ -1,0 +1,7 @@
+[project]
+name = "healthcare-voice-ai"
+version = "1.0.0"
+dependencies = []
+
+[tool.vercel]
+entrypoint = "backend.main:app"

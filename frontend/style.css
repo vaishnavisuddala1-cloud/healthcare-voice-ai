@@ -1,0 +1,15 @@
+* { box-sizing: border-box; font-family: Inter, Arial, sans-serif; }
+body { margin: 0; padding: 0; background: #f6f8fb; color: #172B4D; }
+#app { max-width: 900px; margin: 24px auto; padding: 16px; background: #fff; border-radius: 8px; box-shadow: 0 6px 18px rgba(23,43,77,0.08); }
+header h1 { margin: 0 0 12px 0; font-size: 20px; }
+.controls { display:flex; gap:8px; align-items:center; margin-bottom:12px; }
+.controls input, .controls select { padding:6px 8px; border-radius:4px; border:1px solid #e6eef8; }
+.conversation { height: 400px; overflow: auto; border: 1px solid #eef3fb; padding:12px; border-radius:6px; margin-bottom:12px; }
+.conversation ul { list-style: none; padding:0; margin:0; }
+.conversation li { margin-bottom:8px; }
+.conversation .user { text-align: right; }
+.conversation .agent { text-align: left; color: #0b5fff; }
+.composer { display:flex; gap:8px; }
+#textInput { flex:1; padding:8px 10px; border-radius:6px; border:1px solid #e6eef8; }
+#sendBtn, #recordBtn, #connectBtn { padding:8px 12px; border-radius:6px; border:none; background:#0b5fff; color:#fff; cursor:pointer; }
+#latency { margin-left:8px; align-self:center; color:#666; }

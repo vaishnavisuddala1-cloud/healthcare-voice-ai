@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Healthcare Voice Agent</title>
+  <link rel="stylesheet" href="/app/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Healthcare Voice AI</h1>
+    </header>
+
+    <section class="controls">
+      <label>Session ID: <input id="sessionId" value="demo-session" /></label>
+      <label>Language:
+        <select id="language">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="ta">Tamil</option>
+        </select>
+      </label>
+      <button id="connectBtn">Connect</button>
+      <button id="recordBtn" disabled>Start Recording</button>
+    </section>
+
+    <section class="conversation">
+      <ul id="messages"></ul>
+    </section>
+
+    <section class="composer">
+      <input id="textInput" placeholder="Type message or press Enter" />
+      <button id="sendBtn">Send</button>
+      <div id="latency">Latency: -- ms</div>
+    </section>
+
+  </div>
+  <script src="/app/app.js"></script>
+</body>
+</html>
